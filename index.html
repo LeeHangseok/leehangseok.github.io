@@ -11,9 +11,51 @@
     <title>LeeHangseok - Portfolio</title>
 
 
-    <a style="display:scroll; position:fixed;bottom:50px;right:30px;" href ="#">
-        <SPAN style="background-color:pink; color:black;">TOP</SPAN>
-    </a>
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+  <script src="./images/jquery.scroll.pack.js"></script>
+  <script src="./images/jquery.easing.js"></script>
+    <script>
+  //<![CDATA[
+  $(function(){$("#toTop").scrollToTop({speed:1000,ease:"easeOutBack",start:400})});
+  //]]>
+  </script>
+
+<style type="text/css">
+#toTop
+{
+   background:none;
+   position:fixed;
+   bottom:1px;
+   right:1px;
+   cursor:pointer;
+   text-decoration:none;
+   border-radius:5px;
+   -moz-border-radius:5px;
+   -webkit-border-radius:5px;
+   padding:5px
+   }
+   #toTop
+   {
+      background:none;
+      position:fixed;
+      bottom:1px;
+      right:1px;
+      cursor:pointer;
+      text-decoration:none;
+      border-radius:5px;
+      -moz-border-radius:5px;
+      -webkit-border-radius:5px;
+      padding:5px
+      }
+</style>
+
+
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
