@@ -10,6 +10,27 @@
 
     <title>LeeHangseok - Portfolio</title>
 
+
+
+    <style type="text/css">
+    #toTop
+    {
+       background:none;
+       position:fixed;
+       bottom:1px;
+       right:1px;
+       cursor:pointer;
+       text-decoration:none;
+       border-radius:5px;
+       -moz-border-radius:5px;
+       -webkit-border-radius:5px;
+       padding:5px
+       }
+
+    </style>
+
+
+
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -24,6 +45,8 @@
   </head>
 
   <body>
+
+    <a id="toTop" href="#"><img src="img/totop.png" width="55" height="55" alt="맨 위로"></a>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -71,7 +94,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-    
+
           <a href="#">
             <img class="img-fluid" src="img/Photo.jpg" alt="">
           </a>
@@ -139,6 +162,16 @@
     <!-- Custom scripts for this template -->
     <script src="js/clean-blog.min.js"></script>
 
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <script src="js/jquery.scroll.pack.js"></script>
+    <script src="js/jquery.easing.js"></script>
+    <script>
+    //<![CDATA[
+    $(function(){$("#toTop").scrollToTop({speed:1000,ease:"easeOutBack",start:400})});
+    //]]>
+    </script>
   </body>
 
 </html>
