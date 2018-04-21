@@ -2,6 +2,7 @@
   "use strict"; // Start of use strict
 
   // Floating label headings for the contact form
+  
   $("body").on("input propertychange", ".floating-label-form-group", function(e) {
     $(this).toggleClass("floating-label-form-group-with-value", !!$(e.target).val());
   }).on("focus", ".floating-label-form-group", function() {
