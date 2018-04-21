@@ -12,9 +12,23 @@
 
 
 
-    <a style="display:scroll; position:fixed;bottom:50px;right:30px;" href ="#">
-        <SPAN style="background-color:pink; color:black;">TOP</SPAN>
-    </a>
+    <style type="text/css">
+    #toTop
+    {
+       background:none;
+       position:fixed;
+       bottom:1px;
+       right:1px;
+       cursor:pointer;
+       text-decoration:none;
+       border-radius:5px;
+       -moz-border-radius:5px;
+       -webkit-border-radius:5px;
+       padding:5px
+       }
+
+    </style>
+
 
 
 
@@ -32,6 +46,9 @@
   </head>
 
   <body>
+
+    <a id="toTop" href="#"><img src="img/totop.png" width="55" height="55" alt="맨 위로"></a>
+
 
 
     <!-- Navigation -->
@@ -262,5 +279,15 @@ a flame detecter.</p>
 <p>It was a long time to find a subject that was interesting to me at first, but it seemed that I started to work even harder because it was the subject that I have attached to it. In the case of a login implementation in Oracle, I had to compare whether the value received from the text field matches the value in the database, but it took some time to understand it because I did not know how to use the function in jdbc. It was most impressive to use Java to access and influence other areas of Oracle, and I thought it would be useful for future projects.</p>
 
 
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script src="js/jquery.scroll.pack.js"></script>
+<script src="js/jquery.easing.js"></script>
+<script>
+//<![CDATA[
+$(function(){$("#toTop").scrollToTop({speed:1000,ease:"easeOutBack",start:400})});
+//]]>
+</script>
 </body>
 </html>
