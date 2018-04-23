@@ -34,24 +34,7 @@
 
 
 
-       #navbar a {
-         float: left;
-         display: block;
-         color: #f2f2f2;
-         text-align: center;
-         padding: 14px;
-         text-decoration: none;
-       }
 
-       .sticky {
-         position: fixed;
-         top: 0;
-         width: 100%;
-       }
-
-       .sticky + .content {
-         padding-top: 60px;
-       }
     </style>
 
 
@@ -320,22 +303,6 @@ $(function(){$("#toTop").scrollToTop({speed:1000,ease:"easeOutBack",start:400})}
 
 
 
-
-
-<script>
-window.onscroll = function() {myFunction()};
-
-var navbar = document.getElementById("mainNav");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-</script>
 
 
 
