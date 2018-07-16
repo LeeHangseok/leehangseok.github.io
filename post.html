@@ -289,6 +289,93 @@ a flame detecter.</p>
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="section-heading"Real-time domestic Internet news Big Data gathering </h2>
+
+<p>Modern people are so busy that it is hard to recognize the knowledge or situation of current events, which creates a lack of communication between them an deepening the digital divide.
+.</p>
+
+<p>Even if you know the current information, you could get biased information if you read only one media article. Because of this, find other article is time-consuming and cumbersome to find.
+</p>
+
+<p>So, we made it simple for us to show and recommend the most frequently used keywords in articles by categories.</p>
+
+<p>Keywords : Bigdata, News collector, Raspberry pi, Open source</p>
+
+<p> <b>1. Motivation</b></p>
+<p>Todays People are very busy doing their works or job, So they don’t have enough time to find or read a news articles.
+  In addition, Since different news media have different opinion, You might get a biased information from them.
+</p>
+<p><b> 2. Development Environment And Sensor Used</b></p>
+<p>It was developed by the editions of Windows 10 Education, RASPBIAN 4.14, Java JDK 10, Eclipse Java Oxygen 4.7.2, R Version 3.4.4</p>
+<p>Raspberry Pi 3 B, Raspberry Pi 7 inch Touch Display, MicroSDHC Ultra Class10 32GB</p>
+
+
+<a href="#">
+  <img class="img-fluid" src="img/flowchart.png" alt="">
+</a>
+<span class="caption text-muted">Using Algorithm</span>
+
+
+
+
+
+
+
+
+
+
+<p><b> 3. Use open source</b></p>
+<p> Using the ArduinoThread (MIT lisence) of ivanseidel, we paralleled the automatic control function and the fire notification function, and operated the servomotor to move the window using the Servo (GNU language).</p>
+
+<p><b> 4. Features and Interfaces</b></p>
+<p> When the device was turned on, the window control and flame detection sensors were paralleled by alternating operations at 1ms intervals by the Thread library. Users can download the app created with App Inventor and operate it, and the current temperature can be checked through Arduino's temperature sensor. When you press the window automatic setting button when you go out, when the water comes into the rain water sensor, the resistance value decreases. If the value falls below the set value, the window automatically closes. If it exceeds the set value, the window is opened for ventilation. In addition, you can control the degree of opening fully closed, half open / close, fully open.</p>
+<p> The flame detection sensor is measured at intervals of 200 ms. In normal times, the RGB LED keeps the green light, and when a certain flame is detected, the red light is flickered and the siren is set to sound.</p>
+
+<a href="#">
+  <img class="img-fluid" src="img/AutoWindow.jpg" alt="">
+</a>
+<span class="caption text-muted">Picture of connented curcuit & Application</span>
+
+<p> Prototypes</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MKss6rG2aHs?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<p><b> 4. Experiments and results</b></p>
+
+<p> In order to check the operation of the device, it was confirmed that each part was processed in parallel by connecting the power source. After setting the value of each rain sensor and flame sensor at a medium value, I can confirm that it works.</p>
+
+<p><b> 5. Conclusion </b></p>
+<p> There are many people who are affected by ever-changing climate change. In this paper, we have designed and developed automatic control windows and fire notification window devices and applications to solve these problems, and confirmed that they work properly. It is expected that this will provide not only convenience, but also a safer preparation for safety.</p>
+
+<p><mark>If you want to know more</mark>
+  <a href="https://github.com/LeeHangseok/Automatical-window/">GitHub Page</a>. </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
 <script src="js/jquery.scroll.pack.js"></script>
 <script src="js/jquery.easing.js"></script>
@@ -303,7 +390,7 @@ $(function(){$("#toTop").scrollToTop({speed:1000,ease:"easeOutBack",start:400})}
 
 
 
- 
+
 
 
 
